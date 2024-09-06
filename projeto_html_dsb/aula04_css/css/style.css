@@ -1,0 +1,76 @@
+.container{
+    width: 98.7vw;
+    height: 97.7vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: beige;
+}
+
+#tamanho1{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    animation: girarAoRedor 4s linear infinite;    
+}
+
+.bolinhaBranca1{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background-color: rgb(255, 5, 5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: girarAoRedor 4s linear infinite;
+}
+
+.bolinhaPreta2{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    background-color: rgb(83, 57, 255);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    animation: girarAoRedor 4s linear infinite;
+}
+
+.bolinhaBranca{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: girar 4s linear infinite;
+    animation: girarAoRedor 4s linear infinite;
+}
+
+/* Animação para girar em torno da bola preta */
+@keyframes girar {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+
+}
+@keyframes girarAoRedor {
+    0% {
+        transform: rotate(0deg) translateX(150px);
+    }
+    100% {
+        transform: rotate(360deg) translateX(150px);
+    }
+}
